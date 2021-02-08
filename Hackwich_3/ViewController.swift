@@ -22,10 +22,25 @@ var second = "The background will turn to green"
 // PART 4, PROB 1
     @IBOutlet weak var MyLabel: UILabel!
     @IBOutlet weak var SecondLabel: UILabel!
-    
+
 // PART 4, PROB 2
+    @IBOutlet weak var ThirdLabel: UILabel!
+    
+    var stringOne = "Hello"
+    var stringTwo = "Goodbye"
+    
+    @IBAction func magicButton(_ sender: Any) {
+        if stringOne == "Hello"
 {
-    if 
+        self.view.backgroundColor = UIColor.green
+        ThirdLabel.textColor = UIColor.green
+        print("I completed both probelm sets")
+}
+        else
+{
+    self.view.backgroundColor = UIColor.black
+    ThirdLabel.textColor = UIColor.black
+}}
     
     
 // PART 3
@@ -35,11 +50,13 @@ var second = "The background will turn to green"
 {
     // if block
         self.view.backgroundColor = UIColor.red
+        MyLabel.textColor = UIColor.red
 }
     
-    else // else block is executed because the conditional statemnt evaluates fo false
+    else // else block is executed because the conditional statement evaluates fo false
 {
     self.view.backgroundColor = UIColor.blue
+    SecondLabel.textColor = UIColor.blue
 }
 
 
