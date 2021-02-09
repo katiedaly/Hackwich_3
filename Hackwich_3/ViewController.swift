@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
 // PART 3
-var first = "The bakcground color will turn to blue"
+var first = "The background color will turn to blue"
 var second = "The background will turn to green"
     
     override func viewDidLoad() {
@@ -33,8 +33,8 @@ var second = "The background will turn to green"
         if stringOne == "Hello"
 {
         self.view.backgroundColor = UIColor.green
-        ThirdLabel.textColor = UIColor.green
-        print("I completed both probelm sets")
+        ThirdLabel.text = "green"
+        print("I completed both problem sets")
 }
         else
 {
@@ -49,14 +49,14 @@ var second = "The background will turn to green"
     if first == "The background color will turn blue"
 {
     // if block
-        self.view.backgroundColor = UIColor.red
-        MyLabel.textColor = UIColor.red
+    self.view.backgroundColor = UIColor.red
+    MyLabel.text = "Red"
 }
     
     else // else block is executed because the conditional statement evaluates fo false
 {
     self.view.backgroundColor = UIColor.blue
-    SecondLabel.textColor = UIColor.blue
+    SecondLabel.text = "Blue"
 }
 
 
